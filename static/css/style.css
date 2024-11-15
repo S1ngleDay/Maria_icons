@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box; /* Учитываем паддинги и бордеры в расчет ширины */
 }
 
 body {
@@ -8,39 +9,49 @@ body {
     width: 100%;
     margin: 0 auto;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    color: #4A4A4A; /* Мягкий серый для текста */
 }
 
 header {
     display: flex;
     height: 85px;
-    background-color: #170550;
+    background-color: #D6E3F8; /* Светло-голубой фон для хедера */
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Легкая тень */
 }
 
 header a {
-    color: white;
+    color: #5A6473; /* Мягкий серо-синий для ссылок */
     text-decoration: none;
     font-size: 18px;
     margin-left: 20px;
+    transition: color 0.3s ease; /* Плавный переход цвета */
 }
 
 header a:hover {
     text-decoration: none;
-    color: #F86F03;
+    color: #8A92A2; /* Более насыщенный оттенок для наведения */
 }
 
 main {
-    background-color: #31065A;
-    height: 800px;
+    background-color: #F7DFE3; /* Светло-розовый фон для основного блока */
+    min-height: 800px;
+    padding: 20px;
+    border-radius: 10px; /* Сглаженные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); /* Легкий объем */
 }
 
 footer {
-    background-color: #170550;
+    background-color: #D6E3F8; /* Совпадает с хедером */
     height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #5A6473; /* Цвет текста в футере */
+    font-size: 14px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Тень сверху */
 }
 
 @media (max-width: 768px) {
@@ -52,5 +63,6 @@ footer {
     header a {
         margin-left: 0;
         margin-top: 10px;
+        font-size: 16px;
     }
 }
